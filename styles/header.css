@@ -1,0 +1,57 @@
+header {
+    padding-block: 32px;
+   
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#profile {
+    display: flex;
+    align-items: center; /* Garante que foto e texto alinhem no meio */
+    gap: 32px;
+    width: 100%; /* Para ajudar no espaçamento */
+}
+
+/* Deixa a foto da Isabela arredondada */
+#profile > img {
+    width: 160px; /* Ajuste o tamanho se necessário */
+    height: 160px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+#profile > div {
+    max-width: 384px;
+}
+
+
+
+
+
+
+#profile h1 {
+    font: var(--text-lg);
+    font-weight: 700;
+    color: var(--text-color-primary);
+    margin-bottom: 8px;
+}
+
+/* Estilização da lista lateral (Localização, países, fotos) */
+.info {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: auto; /* Empurra a lista para a direita como na foto */
+}
+
+.info li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color-secondary);
+}
